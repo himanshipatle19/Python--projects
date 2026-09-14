@@ -1,0 +1,27 @@
+# Student Marks Calculator
+
+name = input("Enter student name: ")
+
+maths = float(input("Enter Maths marks: "))
+python = float(input("Enter Python marks: "))
+english = float(input("Enter English marks: "))
+
+total = maths + python + english
+percentage = total / 3
+
+if percentage >= 90:
+    grade = "A"
+elif percentage >= 75:
+    grade = "B"
+elif percentage >= 60:
+    grade = "C"
+elif percentage >= 40:
+    grade = "D"
+else:
+    grade = "F"
+
+print("\n----- Student Result -----")
+print("Name:", name)
+print("Total Marks:", total)
+print("Percentage:", percentage)
+print("Grade:", grade)
